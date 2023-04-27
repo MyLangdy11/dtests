@@ -1,0 +1,132 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+body{ 
+  margin:0px 0px; 
+  font-family: 'Roboto', "arial", monospace;
+}
+
+
+
+.headline{
+   top: 50%;
+   position: absolute;
+   z-index: 3;
+   color: #fff;
+}
+
+.headline h1{
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.arrow{
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  top: 80%;
+  transition: color 1s;
+}
+
+.arrow:hover{
+  cursor: pointer;
+  color: #444;
+   
+}
+
+.arrow-next{
+  left: 20%;
+}
+
+.arrow-prev{
+  right: 20%;
+}
+
+
+
+@media(min-width: 750px){
+  
+.headline{
+  text-align: center;
+}
+
+.headline h1{
+  font-size: 3.5rem;
+  line-height: .5rem;
+  letter-spacing: -0.025em;
+  font-weight: 300;
+  text-align: right; 
+}
+
+.headline p{
+  font-size: 1.5rem;
+}
+  
+.arrow-next{
+  left: 40%;
+}
+
+.arrow-prev{
+  right: 40%;
+}
+
+  
+}
+
+#slides{
+  position: relative;
+  height: 100vh;
+  list-style: none;
+  padding: 0;
+  margin: 0;  
+}
+
+.slide{
+  height:100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 1s;  
+  background-size: cover;
+}
+
+.showing{
+  opacity: 1;
+  z-index: 2;
+}
+
+.slide1{
+  background-image: url("img/image1.jpg")
+}
+
+.slide2{
+  background-image: url("https://images.unsplash.com/photo-1475439242971-afb6fcc1ba22?dpr=1.25&auto=compress,format&crop=entropy&fit=crop&w=1199&h=813&q=80&cs=tinysrgb")
+}
+
+.slide3{
+  background-image: url("https://images.unsplash.com/photo-1462663608395-404cb6246eaf?dpr=1.25&auto=compress,format&crop=entropy&fit=crop&w=1199&h=898&q=80&cs=tinysrgb")
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slide-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.review-wrapper {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.review-card {
+  flex: 0 0 33.33%;
+  padding: 20px;
+  text-align: center;
+}
+
+.review-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.review-card h3 {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.review-card .rating {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #f1c40f;
+}
+
+.review-card p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Slide effect */
+.slide-container:hover .review-wrapper {
+  transform: translateX(-33.33%);
+}
+
+.review-wrapper:hover {
+  transform: translateX(-33.33%);
+}
+
+.review-card:last-child {
+  margin-right: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="review-wrapper">
+          <div class="review-card">
+            <img src="img/durian-fruit.jpg" alt="Review Image">
+            <h3>Review Title</h3>
+            <div class="rating">4.5/5</div>
+            <p>Review Text</p>
+          </div>
+          <div class="review-card">
+            <img src="img/durian-fruit.jpg" alt="Review Image">
+            <h3>Review Title</h3>
+            <div class="rating">4.5/5</div>
+            <p>Review Text</p>
+          </div>
+          <div class="review-card">
+            <img src="img/durian-fruit.jpg" alt="Review Image">
+            <h3>Review Title</h3>
+            <div class="rating">4.5/5</div>
+            <p>Review Text</p>
+          </div>
+          <!-- Repeat review card structure for multiple reviews -->
+        </div>
+        
+      </div>
+      <script>
+        const slider = document.querySelector(".review-wrapper");
+const reviews = document.querySelectorAll(".review-card");
+
+let counter = 1;
+const size = reviews[0].clientWidth;
+
+setInterval(() => {
+  slider.style.transition = "transform 0.5s ease-in-out";
+  slider.style.transform = `translateX(${-size * counter}px)`;
+  counter++;
+  if (counter === reviews.length) {
+    counter = 0;
+    setTimeout(() => {
+      slider.style.transition = "none";
+      slider.style.transform = `translateX(0)`;
+    }, 2000);
+  }
+}, 4000);
+      </script>
+</body>
+</html>
