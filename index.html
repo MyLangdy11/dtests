@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Welcome to Durian Samlout</title>
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg">
+      <img class="iconimg" src="img/durianicon.png" alt="icon">
+      <a class="navbar-brand" href="#">ទុរេនសំឡូត</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <img class="hambuger" src="img/menu.png" alt="">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">ទំព័រដើម <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <div class="heart">&#x2665;</div>
+          កសិផលខ្មែរ កសិករខ្មែរ
+        </span>
+      </div>
+    </nav>
+    <!-- End nav -->
+    <!-- Slider -->
+    <div class="wrapper">
+      <header>
+        <div class="headline">
+        <h1>Durian Samlout</h1>
+      
+        </div>
+      <ul id="slides">
+        <li class="slide slide1 showing"></li>
+        <li class="slide slide2"></li>
+        <li class="slide slide3"></li>
+        <button onClick="prevSlide();"><i class="arrow arrow-next fa fa-angle-left fa-5x"></i></button>
+        <button onClick="nextSlide();"><i class="arrow arrow-prev fa fa-angle-right fa-5x"></i></button>
+      </ul>
+        
+      
+      
+        </header>
+      </div>
+    <!-- End slider -->
+
+    <!-- Card -->
+    <div class="container-card">
+      <!-- item cardbox -->
+        <div class="card">
+          <img src="img/durian-fruit.jpg" alt="Image description">
+          <div class="card-content">
+            <h4><b>ទុរេនម៉នថង</b></h4>
+            <p>សាច់ទឹកដោះគោផ្អែមល្មួត<br>តម្លៃ៖ ១៨,០០០ រៀល/គីឡូក្រាម</p>
+          </div>
+        </div>
+    <!-- End item cardbox -->
+    <!-- item cardbox -->
+    <div class="card">
+      <img src="img/durian-fruit.jpg" alt="Image description">
+      <div class="card-content">
+        <h4><b>ទុរេនម៉នថង</b></h4>
+        <p>សាច់ទឹកដោះគោផ្អែមល្មួត<br>តម្លៃ៖ ១៨,០០០ រៀល/គីឡូក្រាម</p>
+      </div>
+    </div>
+<!-- End item cardbox -->
+<!-- item cardbox -->
+<div class="card">
+  <img src="img/durian-fruit.jpg" alt="Image description">
+  <div class="card-content">
+    <h4><b>ទុរេនម៉នថង</b></h4>
+    <p>សាច់ទឹកដោះគោផ្អែមល្មួត<br>តម្លៃ៖ ១៨,០០០ រៀល/គីឡូក្រាម</p>
+  </div>
+</div>
+<!-- End item cardbox -->
+    </div>
+    <!-- End card -->
+
+    <!-- Describe -->
+    <div class="container-des">
+      <h1>អ្វីដែលអ្នកចង់បាន</h1>
+      <section class="articles">
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img src="img/photo_2023-04-20_13-16-20.jpg" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>This is some title</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+      
+          <div class="article-wrapper">
+            <figure>
+              <img src="img/photo_2023-04-20_13-16-21.jpg" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>This is some title</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+      
+          <div class="article-wrapper">
+            <figure>
+              <img src="img/photo_2023-04-21_10-34-48.jpg" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>This is some title</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+    <!-- End Describe -->
+
+    <!-- Feedback slide -->
+    <main class="main">
+      <section class="container">
+        <div class="title">
+          <h2>Reviews Card</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="slide-container">
+          <div class="review-wrapper">
+            <div class="review-card">
+              <img src="img/durian-types-cheap-budget-featured-image.jpg" alt="Review Image">
+              <h3>Review Title</h3>
+              <div class="rating">4.5/5</div>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil inventore dignissimos eius natus quam, soluta fugiat error fuga laborum architecto expedita ea dolorum dicta corporis possimus ipsa minus, sequi a?</p>
+            </div>
+            <!-- Repeat review card structure for multiple reviews -->
+            <div class="review-card">
+              <img src="img/image1.jpg" alt="Review Image">
+              <h3>Review Title</h3>
+              <div class="rating">4.5/5</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta optio suscipit ut quaerat enim omnis illo, asperiores fuga debitis praesentium facere repellendus quisquam explicabo esse id dolorum atque quos voluptates!</p>
+            </div>
+
+            <div class="review-card">
+              <img src="img/photo_2023-04-20_13-16-20.jpg" alt="Review Image">
+              <h3>Review Title</h3>
+              <div class="rating">4.5/5</div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed id vitae quod sunt deserunt modi aspernatur repellat doloribus eligendi? Soluta qui inventore deleniti est expedita? Non, dolorum? Iure, necessitatibus omnis!</p>
+            </div>
+
+            <div class="review-card">
+              <img src="img/duriandes.jpg" alt="Review Image">
+              <h3>Review Title</h3>
+              <div class="rating">4.5/5</div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed id vitae quod sunt deserunt modi aspernatur repellat doloribus eligendi? Soluta qui inventore deleniti est expedita? Non, dolorum? Iure, necessitatibus omnis!</p>
+            </div>
+
+
+
+          </div>
+        </div>
+
+        
+      </section>
+
+      
+    </main>
+    <!-- End feedback slide -->
+
+    <!-- Footer -->
+    <div class="footer-clean">
+      <footer>
+          <div class="containers">
+              <div class="row justify-content-center">
+                  <div class="col-sm-4 col-md-3 item">
+                      <h3>ទំនាក់ទំនង</h3>
+                      <ul>
+                          <li><a href="tel:85590460280">ទូរសព្ទ៖ 090 ​460 ​280</a></li>
+                          <li><a href="https://me.facebook.com/DurianSamloutFarm">ហ្វេសប៊ុកផេក៖ https://Facebook.com/DurianSamloutFarm</a></li>
+                          <li><a href="https://t.me/DurianSamlout">ឆានែលតេលេក្រាម៖ https://t.me/DurianSamlout</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-4 col-md-3 item">
+                      <h3>អាសយដ្ឋាន</h3>
+                      <ul>
+                          <li>ភូមិស៊ុង១ ឃុំស៊ុង ស្រុកសំឡូត ខេត្តបាត់ដំបង</li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-4 col-md-3 item">
+                      <h3>មើលផែនទី(Google Map)</h3>
+                      <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=ផ្ទះពូជា ភូមិស៊ុង១ ស្រុកសំឡូត(ចម្ការទុរេន)&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><a href="https://embedgooglemap.2yu.co/">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+                  </div>
+                  <div class="col-lg-3 item social"><a href="tel:85590460280"><i class="fa fa-phone"></i></a><a href="https://www.facebook.com/SamloutDurianFarm/"><i class="icon ion-social-facebook"></i></a><a href="http://t.me/DurianSamlout"><i class="fa fa-telegram"></i></a>
+                      <p class="copyright">Durian Samlout © 2023</p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+  </div>
+    <!-- End Footer -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        <script src="slider.js"></script>
+        <script src="feedback.js"></script>
+</body>
+</html>
